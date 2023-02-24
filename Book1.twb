@@ -1,0 +1,1234 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='PresentHospital_Fact+ (database_Hospitalvalues)' inline='true' name='federated.1hhnqwa1s5fmpx11fixf61dky35n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AKSHAYA' name='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c'>
+            <connection authentication='sspi' class='sqlserver' dbname='database_Hospitalvalues' minimum-driver-version='SQL Server Native Client 10.0' odbc-native-protocol='yes' one-time-sql='' server='AKSHAYA' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Calendar_Dimension' table='[dbo].[Calendar_Dimension]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='PresentHospital_Fact' table='[dbo].[PresentHospital_Fact]' type='table' />
+          <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Calendar_Dimension' table='[dbo].[Calendar_Dimension]' type='table' />
+          <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Facility_Dimension' table='[dbo].[Facility_Dimension]' type='table' />
+          <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Payment_Dimension' table='[dbo].[Payment_Dimension]' type='table' />
+          <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='VOC_Dimension' table='[dbo].[VOC_Dimension]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Calendar_Key (Calendar_Dimension)]' value='[Calendar_Dimension].[Calendar_Key]' />
+          <map key='[Calendar_Key]' value='[PresentHospital_Fact].[Calendar_Key]' />
+          <map key='[CareDisplayCategoryvalue]' value='[VOC_Dimension].[CareDisplayCategoryvalue]' />
+          <map key='[CareDisplayFoootnotevalue]' value='[VOC_Dimension].[CareDisplayFoootnotevalue]' />
+          <map key='[CareDisplayIdvalue]' value='[VOC_Dimension].[CareDisplayIdvalue]' />
+          <map key='[CareDisplayNamevalue]' value='[VOC_Dimension].[CareDisplayNamevalue]' />
+          <map key='[Denominator]' value='[Payment_Dimension].[Denominator]' />
+          <map key='[FacilityAddress]' value='[Facility_Dimension].[FacilityAddress]' />
+          <map key='[FacilityCity]' value='[Facility_Dimension].[FacilityCity]' />
+          <map key='[FacilityCounty]' value='[Facility_Dimension].[FacilityCounty]' />
+          <map key='[FacilityID]' value='[Facility_Dimension].[FacilityID]' />
+          <map key='[FacilityKey (Facility_Dimension)]' value='[Facility_Dimension].[FacilityKey]' />
+          <map key='[FacilityKey]' value='[PresentHospital_Fact].[FacilityKey]' />
+          <map key='[FacilityName]' value='[Facility_Dimension].[FacilityName]' />
+          <map key='[FacilityPhoneNo]' value='[Facility_Dimension].[FacilityPhoneNo]' />
+          <map key='[FacilityState]' value='[Facility_Dimension].[FacilityState]' />
+          <map key='[FacilityZip]' value='[Facility_Dimension].[FacilityZip]' />
+          <map key='[Month_]' value='[Calendar_Dimension].[Month_]' />
+          <map key='[PValue]' value='[PresentHospital_Fact].[PValue]' />
+          <map key='[Payment_Average]' value='[Payment_Dimension].[Payment_Average]' />
+          <map key='[Payment_Category]' value='[Payment_Dimension].[Payment_Category]' />
+          <map key='[Payment_Foot_Note]' value='[Payment_Dimension].[Payment_Foot_Note]' />
+          <map key='[Payment_High_Estimate]' value='[Payment_Dimension].[Payment_High_Estimate]' />
+          <map key='[Payment_Key (Payment_Dimension)]' value='[Payment_Dimension].[Payment_Key]' />
+          <map key='[Payment_Key]' value='[PresentHospital_Fact].[Payment_Key]' />
+          <map key='[Payment_Low_Estimate]' value='[Payment_Dimension].[Payment_Low_Estimate]' />
+          <map key='[Payment_Measure_ID]' value='[Payment_Dimension].[Payment_Measure_ID]' />
+          <map key='[Payment_Measure_Name]' value='[Payment_Dimension].[Payment_Measure_Name]' />
+          <map key='[STARTDATE]' value='[Calendar_Dimension].[STARTDATE]' />
+          <map key='[VOC_Key (VOC_Dimension)]' value='[VOC_Dimension].[VOC_Key]' />
+          <map key='[VOC_Key]' value='[PresentHospital_Fact].[VOC_Key]' />
+          <map key='[Year_]' value='[Calendar_Dimension].[Year_]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Calendar_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Calendar_Key]</local-name>
+            <parent-name>[PresentHospital_Fact]</parent-name>
+            <remote-alias>Calendar_Key</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityKey</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FacilityKey]</local-name>
+            <parent-name>[PresentHospital_Fact]</parent-name>
+            <remote-alias>FacilityKey</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VOC_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[VOC_Key]</local-name>
+            <parent-name>[PresentHospital_Fact]</parent-name>
+            <remote-alias>VOC_Key</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Payment_Key]</local-name>
+            <parent-name>[PresentHospital_Fact]</parent-name>
+            <remote-alias>Payment_Key</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PValue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PValue]</local-name>
+            <parent-name>[PresentHospital_Fact]</parent-name>
+            <remote-alias>PValue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calendar_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Calendar_Key (Calendar_Dimension)]</local-name>
+            <parent-name>[Calendar_Dimension]</parent-name>
+            <remote-alias>Calendar_Key</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STARTDATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[STARTDATE]</local-name>
+            <parent-name>[Calendar_Dimension]</parent-name>
+            <remote-alias>STARTDATE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+              <attribute datatype='boolean' name='TypeIsDateTime2orDate'>true</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month_</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Month_]</local-name>
+            <parent-name>[Calendar_Dimension]</parent-name>
+            <remote-alias>Month_</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year_</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Year_]</local-name>
+            <parent-name>[Calendar_Dimension]</parent-name>
+            <remote-alias>Year_</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityKey</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FacilityKey (Facility_Dimension)]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityKey</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FacilityID]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityName]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityName</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityAddress</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityAddress]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityAddress</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityCity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityCity]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityCity</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityState</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityState]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityState</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityZip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityZip]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityZip</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityCounty</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityCounty]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityCounty</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FacilityPhoneNo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FacilityPhoneNo]</local-name>
+            <parent-name>[Facility_Dimension]</parent-name>
+            <remote-alias>FacilityPhoneNo</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Payment_Key (Payment_Dimension)]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Key</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Measure_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_Measure_ID]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Measure_ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Measure_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_Measure_Name]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Measure_Name</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_Category]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Category</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Denominator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Denominator]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Denominator</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Average</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_Average]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Average</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Low_Estimate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_Low_Estimate]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Low_Estimate</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_High_Estimate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment_High_Estimate]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_High_Estimate</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Foot_Note</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Payment_Foot_Note]</local-name>
+            <parent-name>[Payment_Dimension]</parent-name>
+            <remote-alias>Payment_Foot_Note</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VOC_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[VOC_Key (VOC_Dimension)]</local-name>
+            <parent-name>[VOC_Dimension]</parent-name>
+            <remote-alias>VOC_Key</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CareDisplayNamevalue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CareDisplayNamevalue]</local-name>
+            <parent-name>[VOC_Dimension]</parent-name>
+            <remote-alias>CareDisplayNamevalue</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CareDisplayIdvalue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CareDisplayIdvalue]</local-name>
+            <parent-name>[VOC_Dimension]</parent-name>
+            <remote-alias>CareDisplayIdvalue</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CareDisplayCategoryvalue</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CareDisplayCategoryvalue]</local-name>
+            <parent-name>[VOC_Dimension]</parent-name>
+            <remote-alias>CareDisplayCategoryvalue</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CareDisplayFoootnotevalue</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[CareDisplayFoootnotevalue]</local-name>
+            <parent-name>[VOC_Dimension]</parent-name>
+            <remote-alias>CareDisplayFoootnotevalue</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Calendar Key (Calendar Dimension)' datatype='integer' name='[Calendar_Key (Calendar_Dimension)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Calendar Key' datatype='integer' name='[Calendar_Key]' role='dimension' type='ordinal' />
+      <column caption='Care Display Categoryvalue' datatype='string' name='[CareDisplayCategoryvalue]' role='dimension' type='nominal' />
+      <column caption='Care Display Foootnotevalue' datatype='integer' name='[CareDisplayFoootnotevalue]' role='measure' type='quantitative' />
+      <column caption='Care Display Idvalue' datatype='string' name='[CareDisplayIdvalue]' role='dimension' type='nominal' />
+      <column caption='Care Display Namevalue' datatype='string' name='[CareDisplayNamevalue]' role='dimension' type='nominal' />
+      <column datatype='integer' datatype-customized='true' name='[Denominator]' role='dimension' type='ordinal' />
+      <column caption='Facility Address' datatype='string' name='[FacilityAddress]' role='dimension' type='nominal' />
+      <column caption='Facility City' datatype='string' name='[FacilityCity]' role='dimension' type='nominal' />
+      <column caption='Facility County' datatype='string' name='[FacilityCounty]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Facility ID' datatype='integer' name='[FacilityID]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='FacilityKey (Facility Dimension)' datatype='integer' name='[FacilityKey (Facility_Dimension)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Facility Key' datatype='integer' name='[FacilityKey]' role='dimension' type='ordinal' />
+      <column caption='Facility Name' datatype='string' name='[FacilityName]' role='dimension' type='nominal' />
+      <column caption='Facility Phone No' datatype='string' name='[FacilityPhoneNo]' role='dimension' type='nominal' />
+      <column caption='Facility State' datatype='string' name='[FacilityState]' role='dimension' type='nominal' />
+      <column caption='Facility Zip' datatype='string' name='[FacilityZip]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[Month_]' role='dimension' type='quantitative' />
+      <column caption='P Value' datatype='string' name='[PValue]' role='dimension' type='nominal' />
+      <column caption='Payment Average' datatype='integer' datatype-customized='true' name='[Payment_Average]' role='dimension' type='ordinal' />
+      <column caption='Payment Category' datatype='string' name='[Payment_Category]' role='dimension' type='nominal' />
+      <column caption='Payment Foot Note' datatype='integer' name='[Payment_Foot_Note]' role='measure' type='quantitative' />
+      <column datatype='integer' datatype-customized='true' name='[Payment_High_Estimate]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Payment Key (Payment Dimension)' datatype='integer' name='[Payment_Key (Payment_Dimension)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Payment Key' datatype='integer' name='[Payment_Key]' role='dimension' type='ordinal' />
+      <column caption='Payment Low Estimate' datatype='integer' datatype-customized='true' name='[Payment_Low_Estimate]' role='dimension' type='ordinal' />
+      <column caption='Payment Measure ID' datatype='integer' datatype-customized='true' name='[Payment_Measure_ID]' role='dimension' type='ordinal' />
+      <column caption='Payment Measure Name' datatype='string' name='[Payment_Measure_Name]' role='dimension' type='nominal' />
+      <column caption='Startdate' datatype='date' name='[STARTDATE]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='VOC Key (VOC Dimension)' datatype='integer' name='[VOC_Key (VOC_Dimension)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='VOC Key' datatype='integer' name='[VOC_Key]' role='dimension' type='ordinal' />
+      <column caption='Year' datatype='integer' name='[Year_]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Calendar_Dimension' datatype='table' name='[__tableau_internal_object_id__].[Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Facility_Dimension' datatype='table' name='[__tableau_internal_object_id__].[Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Payment_Dimension' datatype='table' name='[__tableau_internal_object_id__].[Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='PresentHospital_Fact' datatype='table' name='[__tableau_internal_object_id__].[PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='VOC_Dimension' datatype='table' name='[__tableau_internal_object_id__].[VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241]' role='measure' type='quantitative' />
+      <column-instance column='[Payment_Average]' derivation='None' name='[none:Payment_Average:nk]' pivot='key' type='ordinal' />
+      <column-instance column='[Payment_Category]' derivation='None' name='[none:Payment_Category:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Payment_Average:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>21347</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>20093</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>17360</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Payment_Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Greater Than the National Average Payment&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Number of Cases Too Small&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;No Different Than the National Average Payment&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Less Than the National Average Payment&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Calendar_Dimension' id='Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34'>
+            <properties context=''>
+              <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Calendar_Dimension' table='[dbo].[Calendar_Dimension]' type='table' />
+            </properties>
+          </object>
+          <object caption='Facility_Dimension' id='Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4'>
+            <properties context=''>
+              <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Facility_Dimension' table='[dbo].[Facility_Dimension]' type='table' />
+            </properties>
+          </object>
+          <object caption='Payment_Dimension' id='Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77'>
+            <properties context=''>
+              <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='Payment_Dimension' table='[dbo].[Payment_Dimension]' type='table' />
+            </properties>
+          </object>
+          <object caption='PresentHospital_Fact' id='PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483'>
+            <properties context=''>
+              <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='PresentHospital_Fact' table='[dbo].[PresentHospital_Fact]' type='table' />
+            </properties>
+          </object>
+          <object caption='VOC_Dimension' id='VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241'>
+            <properties context=''>
+              <relation connection='sqlserver.02f6v0h1yi1jbc1836wpl0a00c6c' name='VOC_Dimension' table='[dbo].[VOC_Dimension]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Calendar_Key]' />
+              <expression op='[Calendar_Key (Calendar_Dimension)]' />
+            </expression>
+            <first-end-point object-id='PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Calendar_Dimension_5E08AACA743A436DA3098B26903C7F34' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[FacilityKey]' />
+              <expression op='[FacilityKey (Facility_Dimension)]' />
+            </expression>
+            <first-end-point object-id='PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Facility_Dimension_FE228099B8B646058A7DC3E7DCF2F5C4' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Payment_Key]' />
+              <expression op='[Payment_Key (Payment_Dimension)]' />
+            </expression>
+            <first-end-point object-id='PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Payment_Dimension_C1FA6CB3ABCB4B9BBBE10306528A8C77' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[VOC_Key]' />
+              <expression op='[VOC_Key (VOC_Dimension)]' />
+            </expression>
+            <first-end-point object-id='PresentHospital_Fact_A202D7ABB5FF4E0798BD1BA1CE6CD483' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='VOC_Dimension_8350FFB6A40644EA8DE6EA45DD2E5241' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PresentHospital_Fact+ (database_Hospitalvalues)' name='federated.1hhnqwa1s5fmpx11fixf61dky35n' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1hhnqwa1s5fmpx11fixf61dky35n'>
+            <column caption='Care Display Namevalue' datatype='string' name='[CareDisplayNamevalue]' role='dimension' type='nominal' />
+            <column caption='Facility County' datatype='string' name='[FacilityCounty]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Facility Name' datatype='string' name='[FacilityName]' role='dimension' type='nominal' />
+            <column caption='Payment Average' datatype='integer' datatype-customized='true' name='[Payment_Average]' role='dimension' type='ordinal' />
+            <column-instance column='[CareDisplayNamevalue]' derivation='None' name='[none:CareDisplayNamevalue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FacilityCounty]' derivation='None' name='[none:FacilityCounty:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FacilityName]' derivation='None' name='[none:FacilityName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment_Average]' derivation='None' name='[none:Payment_Average:nk]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Average:nk]' value='218' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:FacilityCounty:nk]' />
+              <color column='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:CareDisplayNamevalue:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:CareDisplayNamevalue:nk] / [federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:FacilityName:nk])</rows>
+        <cols>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Average:nk]</cols>
+      </table>
+      <simple-id uuid='{488321D5-3C35-496F-BDF9-659EF1FA4D7B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PresentHospital_Fact+ (database_Hospitalvalues)' name='federated.1hhnqwa1s5fmpx11fixf61dky35n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hhnqwa1s5fmpx11fixf61dky35n'>
+            <column caption='Payment Average' datatype='integer' datatype-customized='true' name='[Payment_Average]' role='dimension' type='ordinal' />
+            <column caption='Payment Category' datatype='string' name='[Payment_Category]' role='dimension' type='nominal' />
+            <column caption='Payment Foot Note' datatype='integer' name='[Payment_Foot_Note]' role='measure' type='quantitative' />
+            <column-instance column='[Payment_Average]' derivation='None' name='[none:Payment_Average:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[Payment_Category]' derivation='None' name='[none:Payment_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment_Foot_Note]' derivation='Sum' name='[sum:Payment_Foot_Note:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[sum:Payment_Foot_Note:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[sum:Payment_Foot_Note:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Average:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{600332FA-4AE3-4562-9B3C-6C1C918CF404}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:CareDisplayNamevalue:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:CareDisplayNamevalue:nk]</field>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:FacilityCounty:nk]</field>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:FacilityName:nk]</field>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Average:nk]</field>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Measure_Name:nk]</field>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Year_:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{79673E07-F77D-4F10-8A7C-5F7766DDE925}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Average:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hhnqwa1s5fmpx11fixf61dky35n].[none:Payment_Average:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{90487697-5435-4FB7-8056-2AA38AA16E89}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      dBmRkQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='84' name='Sheet 3' width='64'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
